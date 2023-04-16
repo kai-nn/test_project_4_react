@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.scss'
+import Filter from "./components/Filter/Filter";
+import Diagram from "./components/Diagram/Diagram"
+import { Provider } from 'react-redux'
+import {store} from './store/store'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Provider store={store}>
+        <div id={'pdfOutput'} className={style.window}>
+            <Filter />
+            <Diagram />
+        </div>
+      </Provider>
+  )
 }
 
-export default App;
+export default App

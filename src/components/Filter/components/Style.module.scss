@@ -1,0 +1,40 @@
+.inputFrame{
+  display: flex;
+  background-color: white;
+
+}
+
+.label{
+  font-weight: 500;
+  margin-right: 5px;
+  height: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.input{
+  width: 100%;
+  border: none;
+  outline:none;
+  display: flex;
+  align-items: center;
+}
+
+
+.selectFrame{
+  background-color: white;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+li{
+  //padding: 0 10px;
+  list-style-type: none;
+}
